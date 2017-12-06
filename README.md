@@ -28,13 +28,31 @@ Using a gmail account is recommended.
 
 ### Installing
 
-Use the file list.mail to add all your mail inside.
+___NOT COMPULSORY__
+Step 1: Copy the two files on your ~ (home)
+Step 2: Make selmail.sh executable
+Step 3: using .bash_aliases to modify its name, ex.
+```
+cd ~
+echo "alias post='bash selmail.sh'" >> .bash_aliases
+```
+This will change the name from "selmail.sh" to "post"
+And you are done, you can edit the file selmail.sh to add a "Sincerely...etc" in it.
+Example:
+```
+post "My Subject" "This is my message" Attachment/to/path/file.txt
+```
+Press enter
+Then choose an option and you are done.
+
+### To remember
+Use the file list.mail to add all your contact mail inside.
 See the example inside the mail and replicate.
 
 ```
 myname:mymail@maily.com
 ```
-Don't forget to make it executable:
+Don't forget to make it executable: 
 ```
 chmod +x selmail.sh
 ```
