@@ -15,6 +15,8 @@ read -p "Select a mail: " num
 if [ "$num" == "$i" ]
 then
 	read -p "Enter a mail: " mail
+	read -p "Enter his/her name: " name
+	echo "$name:$mail" >> list.mail
 else
 	mail=$(sed  "$num q; d" list.mail | cut -d ':' -f 2)
 fi
@@ -29,7 +31,7 @@ then
 	exit 1
 fi 
 
-echo -e "$2\n\With Kind Regards,\n\nMy Name" > /tmp/message
+echo -e "$2\n\nCordialement,\n\nBruno Bernard" > /tmp/message
 if [ -z "$3" ]
 then
 	mutt -s "$subject" $mail < /tmp/message & pid=$!; s='-\|/'; i=0; while kill -0 $pid; do i=$(( (i+1) %4 ));  printf "\r${s:$i:1} $(tput sgr0; tput bold; tput setab 4 ) [sending your mail]$(tput sgr0)"; sleep .1; done 2> /dev/null
