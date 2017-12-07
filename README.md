@@ -28,7 +28,7 @@ Using a gmail account is recommended.
 
 ### Installing
 
-___NOT COMPULSORY__
+_NOT COMPULSORY
 Step 1: Copy the two files on your ~ (home)
 Step 2: Make selmail.sh executable
 Step 3: using .bash_aliases to modify its name, ex.
@@ -60,23 +60,23 @@ chmod +x selmail.sh
 ### Optional
 You can modify your .bash_aliases to change the name when executing.
 
-###How to use it
+### How to use it
 
 ```
 bash selmail.sh "Subject" "Message" files
 ```
 With quotes.
 
-Example of sending a simple mail
+Example of sending a simple mail without .bash_aliases
 
 ```
 bash selmail.sh "My project" "We have a meeting this afternoon,\nDon't forget the gift"
 ```
 
-Example of sending a simple mail with attachment
+Example of sending a simple mail with attachment without .bash_aliases
 
 ```
-selmail.sh "Homework" "Please find as attached my homework" ~/Desktop/homework.pdf
+bash selmail.sh "Homework" "Please find as attached my homework" ~/Desktop/homework.pdf
 ```
 
 
