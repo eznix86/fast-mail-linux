@@ -63,14 +63,14 @@ You can modify your .bash_aliases to change the name when executing.
 ###How to use it
 
 ```
-selmail.sh "Subject" "Message" files
+bash selmail.sh "Subject" "Message" files
 ```
 With quotes.
 
 Example of sending a simple mail
 
 ```
-selmail.sh "My project" "We have a meeting this afternoon,\nDon't forget the gift"
+bash selmail.sh "My project" "We have a meeting this afternoon,\nDon't forget the gift"
 ```
 
 Example of sending a simple mail with attachment
