@@ -19,16 +19,15 @@ and the send-only sendmail emulator
 ssmtp
 ```
 
-Configure ssmtp
-link on how to configure ssmtp: http://tombuntu.com/index.php/2008/10/21/sending-email-from-your-system-with-ssmtp/
+Configure ssmtp,
+link: http://tombuntu.com/index.php/2008/10/21/sending-email-from-your-system-with-ssmtp/
 
-Both of the file should be in the same directory (for e.g ~ (home directory))
-how to configure
-Using a gmail account is recommended.
+- Both of the file should be in the same directory (for e.g ~ (home directory)).
+- Using a gmail account is recommended.
 
 ### Installing
 
-_NOT COMPULSORY
+__NOT COMPULSORY
 Step 1: Copy the two files on your ~ (home)
 Step 2: Make selmail.sh executable
 Step 3: using .bash_aliases to modify its name, ex.
