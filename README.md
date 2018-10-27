@@ -1,6 +1,4 @@
-# Project Title
-
-Fast terminal mail sender
+# Fast terminal mail sender
 
 ## Getting Started
 
